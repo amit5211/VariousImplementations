@@ -63,6 +63,6 @@ export class CustomFormControlComponent implements OnInit, ControlValueAccessor 
     this.onTouched = fn;
   }
   setDisabledState?(isDisabled: boolean): void {
-    throw new Error('Method not implemented.');
+    //throw new Error('Method not implemented.');
   }
 }
