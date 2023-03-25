@@ -1,4 +1,12 @@
-<form [formGroup]="name" *ngIf="name" class="form-group">
-    <input type="text" formControlName="firstName" mat-input class="form-control">
-    <input type="text" formControlName="lastName" mat-input class="form-control">
+<form [formGroup]="name" *ngIf="name">
+    <div class="row">
+        <div class="col">
+            <label for="firstName">First Name</label>
+            <input type="text" formControlName="firstName" placeholder="First Name" mat-input class="form-control col-sm-2">
+        </div>
+        <div class="col">
+            <label for="lastName">Last Name</label>
+            <input type="text" formControlName="lastName" placeholder="Last Name" mat-input class="form-control col-sm-2">
+        </div>
+    </div>
 </form>
